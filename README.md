@@ -49,6 +49,36 @@
 - NumPy
 - Pydantic
 
+## 🏗️ 架構說明
+本專案採用前後端分離架構：
+
+Vue 3 Frontend
+      |
+      |  Axios API Request
+      v
+FastAPI Backend
+      |
+      |  yfinance / 官方台股清單
+      v
+台股價格資料、基本面資料、技術分析資料
+
+### 前端負責：
+
+。搜尋輸入與結果展示
+。Dashboard 版面呈現
+。K 線圖與估價水平線繪製
+
+### 後端負責：
+
+。台股代碼與中文名稱解析
+。yfinance 資料抓取
+。DCF / P/E 估價計算
+。安全邊際與技術點位計算
+。回傳前端可直接使用的 JSON 資料
+
+## ⚠️ 免責聲明
+
+本專案產生之估價與技術分析結果僅供研究與作品展示用途，不構成任何投資建議。投資前請自行評估風險。
 
 ```bash
 git clone https://github.com/your-username/stock-valuation-dashboard.git
