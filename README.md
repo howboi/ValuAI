@@ -80,6 +80,4 @@ FastAPI Backend
 
 本專案產生之估價與技術分析結果僅供研究與作品展示用途，不構成任何投資建議。投資前請自行評估風險。
 
-```bash
-git clone https://github.com/your-username/stock-valuation-dashboard.git
-cd stock-valuation-dashboard
+
